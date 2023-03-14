@@ -27,11 +27,6 @@ fn main() {
 
     let cli = Cli::parse();
 
-    for a in cli.args.iter() {
-        println!("{}", a);
-    }
-    //
-
     if s.processes_by_exact_name(&cli.program_name)
         .peekable()
         .peek()
